@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'SoDo Sans', Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  #starbucks-icon{
+    display:inline-block;
+    background-image: url(./logo.svg); 
+    margin: 0 25px 0 25px;
+    width: 50px;
+    height: 50px;
+    background-size:cover;
+  }
+  /* NAVBAR */
+  
+  header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #fff;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Reducir espacio entre opciones del menú */
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin:0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  #starbucks-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(./logo.svg);
+    background-size: cover;
+    margin-right: 25px;
+  }
+  
+  .navBarButton {
+    margin: 0 20px;
+  }
+  
+  .navBarButton a {
+    text-decoration: none;
+    display:inline-block;
+    vertical-align: middle;
+    color: #212121;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+  
+  .navBarButton a:hover {
+    border-bottom: 2px solid #1e3932;
+  }
+  
+  /* BANNERS */
+  .banner:nth-of-type(even) {
+    flex-direction: row-reverse;
+  
+  }
+  .banner1 {
+    background-color:#1e3932  /* Ejemplo: verde oscuro */
+  }
+  
+  .banner2 {
+    background-color: #c3a6c6;   /* Ejemplo: café */
+  }
+  
+  .banner3 {
+    background-color: #f0dcb2;   /* Ejemplo: un café más oscuro */
+  }
+  
+  .banner4 {
+    background-color: #1e3932;   /* Ejemplo: un café más oscuro */
+  }
+  
+  .banner5 {
+    background-color:#bd9ebc;   /* Ejemplo: un café más oscuro */
+  }
+  
+  .banner6 {
+    background-color: #1e3932;    /* Ejemplo: un café más oscuro */
+  }
+  
+  .banner7 {
+    background-color: #1e3932;   /* Ejemplo: un café más oscuro */
+  } 
+  .contenedor-doble {
+    flex: 1;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      display:inline-block;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 400px;
+    /* display: flex;               Activa el modo flex 
+    justify-content: space-between;  Distribuye espacio entre los elementos 
+    align-items: stretch;        Ajusta la altura de ambas secciones al mismo nivel 
+    gap: 20px;                 Espacio horizontal entre sección 6 y 7 */
+  }
+  .banner-image{
+    width: 500px;
+    height: 300px;
+  }
+  .banner6, .banner7 {
+    flex: 1;        /* Cada sección se expande para ocupar el mismo espacio */
+    min-width: 0;
+       /* Previene problemas de desbordamiento de contenido */
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    margin-bottom: 50px; /* Espacio entre secciones */
+    /* background-color: #1e3932; Fondo neutro; podrás asignar otros colores si es necesario */
+    border: 1px solid #eaeaea; /* Opcional: para separar visualmente cada sección */
+  }
+  
+  /* Alterna la dirección de los banners para variedad */
+  /* .banner:nth-of-type(even) {
+    flex-direction: row-reverse;
+  } */
+  
+  /* Contenedores internos */
+  .banner-content {
+    display:inline-block;
+    flex-direction: column; /* En pantallas pequeñas, se apilan */
+    align-content: center;
+    flex: 10;
+    padding: 0 80px;
+    text-align:center;
+    padding: 10px;
+    color: white;
+  }
+  
+  .banner-content h1,
+  .banner-content h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .banner-content p {
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Área para la imagen: deja espacio para insertar tus imágenes luego */
+  .banner-image {
+    /* background-color: #f0f0f0; Color de placeholder */
+    /* width:auto; /* Altura de ejemplo /
+    margin: 20px auto;
+    align-items: center;
+    background-color: auto;
+    justify-content: center; */
+    width: 100%;     /* Ajusta el ancho que desees */
+    height:500px;      /* La altura se calcula automáticamente */
+    display:flex; 
+    flex:1;
+    margin: 20px auto;
+    justify-content: flex-end; 
+    object-fit: cover;  /* Para evitar espacios en blanco alrededor de imágenes en elementos inline */
+  }
+  .contenedor-doble{
+    display:grid;          
+    justify-content: space-between 20px;  /* Espacio uniforme entre las secciones */
+    align-items: center;  
+    text-align: center; /* Alinea las secciones por la parte superior (puedes ajustar a center, etc.) */
+    gap: 20px; 
+    flex-direction: row;
+  }
+  .contentButton a{
+    text-decoration-color: none;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: background 0.3s, color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .contentButton a:hover{
+    background: white;
+    color: #1c3b2a;
+  }
+  .image-text-container img {
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+  }
+  
+  .image-text-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  .contenedor-doble h2{
+  font-size: 20px;
+  display:flex;
+  flex-directioncolumn-gap: ;
+  gap: 10px;
+  align-items:flex-end;
+  }
+  .social_media img {
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+}
+  .contenedor-doble img{
+    display:inline-block;
+    max-width: 300px;
+    width: 500;
+  }
+  .contenedor-doble.{
+    display: inline-block;
+    flex:1;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1c3b2a; /* Color de fondo */
+    border-radius: 10px;
+  
+  }
+  @media (max-width: 768px) {
+    .contenedor-doble {
+        flex-direction: column; /* En pantallas pequeñas, se apilan */
+  
+  /* FOOTER */
+  footer.footer {
+    background-color: white;
+    color: white;
+    padding: 20px 50px 0;
+    text-align: center;
+  }
+  .column h4, li{
+    color:black;
+  
+  
+  }
+  .footer_link {
+    display: flex;
+    justify-content:first baseline;
+    gap: 50px; 
+  }
+  .footer_link .column {
+    text-align:left;
+    margin: right 200px;px;
+  }
+  .footer_link ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer_link a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social_media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.social_media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+  
+  
+  /* Ejemplo de rutas para cada ícono (ajusta según tus archivos) */
+  #facebook_icon {
+    background-image: url('./assets/facebook.png');
+  }
+  #instagram_icon {
+    background-image: url('./assets/instagram.png');
+  }
+  #twitter_icon {
+    background-image: url('./assets/twitter.png');
+  }
+  #facebook_icon2 {
+    background-image: url('./assets/facebook-alt.png');
+  }
+  
+  .footer_second {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .footer_second a {
+    text-decoration: none;
+    color: gray;
+    margin: 0 5px;
+  
+  }
+  

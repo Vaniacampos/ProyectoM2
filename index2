@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks - Bebidas y Alimentos</title>
+    <link rel="stylesheet" href="./style2.css">-- Asegúrate de que este CSS está bien vinculado -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="Starbucks Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">Localizar tienda</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Únete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="intro">
+            <h2>¡Disfrútalos!</h2>
+            <h1>Conoce nuestras bebidas y alimentos de temporada</h1>
+        </section>
+
+        <!-- Sección de Bebidas -->
+        <section class="bebidas">
+            <h3>Bebidas</h3>
+            <div class="grid-container">
+                <div class="item">
+                    <img src="bebida1.png" alt="Bebida caliente">
+                    <p>Bebidas calientes</p>
+                </div>
+                <div class="item">
+                    <img src="bebida2.png" alt="Frappuccino">
+                    <p>Frappuccino</p>
+                </div>
+                <div class="item">
+                    <img src="bebida3.png" alt="Bebidas frías">
+                    <p>Bebidas frías</p>
+                </div>
+                <div class="item">
+                    <img src="bebida4.png" alt="Bebidas base té">
+                    <p>Bebidas Base Té</p>
+                </div>
+                <div class="item">
+                    <img src="bebida5.png" alt="Cold Brew">
+                    <p>Cold Brew</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p><strong>Sobre Nosotros</strong> Atención al cliente</p>
+            <p>Trabaja con nosotros | Contáctanos</p>
+            <p>Historias Starbucks | Facturas Electrónicas | Formas de comprar</p>
+            <div class="social-media">
+                <img src="facebook.png" alt="Facebook">
+                <img src="instagram.png" alt="Instagram">
+                <img src="twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
